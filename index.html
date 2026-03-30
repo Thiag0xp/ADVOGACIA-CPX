@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advocacia RP</title>
+  <meta name="description" content="Advocacia Premium para Roleplay, com atendimento jurídico fictício, defesa estratégica e recrutamento no servidor." />
+  <meta property="og:title" content="Advocacia RP" />
+  <meta property="og:description" content="Defendendo seus direitos no RP com estratégia e presença." />
+
+  <!-- Favicon adicionado -->
+  <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/1483269881163022397/1487456892635844769/ChatGPT_Image_28_03_2026_04_35_59.png" />
+  <link rel="shortcut icon" href="https://media.discordapp.net/attachments/1483269881163022397/1487456892635844769/ChatGPT_Image_28_03_2026_04_35_59.png" type="image/png" />
+  <link rel="apple-touch-icon" href="https://media.discordapp.net/attachments/1483269881163022397/1487456892635844769/ChatGPT_Image_28_03_2026_04_35_59.png" />
+
+  <meta property="og:image" content="https://media.discordapp.net/attachments/1483269881163022397/1487456892635844769/ChatGPT_Image_28_03_2026_04_35_59.png?ex=69c935ae&is=69c7e42e&hm=761c82e7d63a2fef8744379de05475d39e241f367f00d2d32627b5adc7bde779&=&format=webp&quality=lossless&width=960&height=960" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #0b0b0f;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    header {
+      background: linear-gradient(135deg, rgba(17,17,24,0.92), rgba(27,27,36,0.92));
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding: 18px 0;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(8px);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand img {
+      width: 54px;
+      height: 54px;
+      object-fit: cover;
+      border-radius: 16px;
+      border: 1px solid rgba(212,175,55,0.35);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.28);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #d4af37;
+      line-height: 1.1;
+    }
+
+    .logo span {
+      display: block;
+      color: #eaeaea;
+      font-size: 12px;
+      font-weight: normal;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 24px;
+      font-size: 15px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .menu a:hover {
+      color: #d4af37;
+    }
+
+    .hero {
+      padding: 90px 0;
+      background: radial-gradient(circle at top right, rgba(212,175,55,0.18), transparent 30%), linear-gradient(180deg, rgba(255,255,255,0.02), transparent 45%), #0b0b0f;
+    }
+
+    .hero-content {
+      display: grid;
+      grid-template-columns: 1.15fr 0.95fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 8px 14px;
+      border: 1px solid rgba(212,175,55,0.4);
+      background: rgba(212,175,55,0.1);
+      border-radius: 999px;
+      color: #f3d77d;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #d4af37;
+    }
+
+    .hero p {
+      color: #cfcfcf;
+      font-size: 18px;
+      max-width: 620px;
+    }
+
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 24px;
+      border-radius: 14px;
+      font-weight: bold;
+      transition: 0.3s;
+      display: inline-block;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-gold {
+      background: #d4af37;
+      color: #111;
+    }
+
+    .btn-gold:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,0.18);
+      color: #fff;
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.06);
+    }
+
+    .hero-side {
+      display: grid;
+      gap: 18px;
+    }
+
+    .hero-image {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 26px;
+      overflow: hidden;
+      box-shadow: 0 12px 34px rgba(0,0,0,0.28);
+      position: relative;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      min-height: 420px;
+      object-fit: cover;
+    }
+
+    .hero-image::after {
+      content: "Advocacia Premium";
+      position: absolute;
+      left: 18px;
+      bottom: 18px;
+      background: rgba(11,11,15,0.75);
+      color: #d4af37;
+      border: 1px solid rgba(212,175,55,0.35);
+      padding: 10px 14px;
+      border-radius: 14px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-mini-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 22px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+
+    .card h3 {
+      color: #d4af37;
+      margin-bottom: 8px;
+      font-size: 24px;
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      margin-bottom: 40px;
+    }
+
+    .section-title p {
+      color: #d4af37;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .section-title h2 {
+      font-size: 38px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .service-box {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 22px;
+      padding: 28px;
+      transition: 0.3s;
+    }
+
+    .service-box:hover {
+      transform: translateY(-6px);
+      border-color: rgba(212,175,55,0.5);
+    }
+
+    .service-box .icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(212,175,55,0.28), rgba(212,175,55,0.08));
+      margin-bottom: 16px;
+      border: 1px solid rgba(212,175,55,0.2);
+    }
+
+    .service-box h3 {
+      margin-bottom: 12px;
+      font-size: 22px;
+    }
+
+    .service-box p {
+      color: #c9c9c9;
+      font-size: 15px;
+    }
+
+    .highlight {
+      background: rgba(255,255,255,0.02);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .highlight-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 0.9fr;
+      gap: 28px;
+    }
+
+    .form-box, .info-box {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 24px;
+      padding: 30px;
+    }
+
+    form {
+      display: grid;
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 14px 16px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(0,0,0,0.25);
+      color: #fff;
+      outline: none;
+    }
+
+    input:focus, textarea:focus {
+      border-color: rgba(212,175,55,0.5);
+      box-shadow: 0 0 0 3px rgba(212,175,55,0.08);
+    }
+
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    footer {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      text-align: center;
+      padding: 26px 0;
+      color: #a9a9a9;
+      font-size: 14px;
+    }
+
+    @media (max-width: 1024px) {
+      .hero-content, .contact-grid, .highlight-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .services {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+      }
+
+      .menu {
+        gap: 14px;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .hero-content, .contact-grid, .highlight-grid, .services, .hero-mini-cards {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-image img {
+        min-height: 320px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#inicio" class="brand">
+          <img src="https://media.discordapp.net/attachments/1483269881163022397/1487456892635844769/ChatGPT_Image_28_03_2026_04_35_59.png?ex=69c935ae&is=69c7e42e&hm=761c82e7d63a2fef8744379de05475d39e241f367f00d2d32627b5adc7bde779&=&format=webp&quality=lossless&width=960&height=960" alt="Logo Advocacia RP" />
+          <div class="logo">Advocacia RP<span>Presença. Defesa. Estratégia.</span></div>
+        </a>
+        <div class="menu">
+          <a href="#inicio">Início</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#recrutamento">Recrutamento</a>
+          <a href="#contato">Contato</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="inicio">
+    <div class="container hero-content">
+      <div>
+        <div class="tag">Advocacia Premium • Roleplay</div>
+        <h1>Defendendo seus direitos no <span>RP</span> com estratégia e presença.</h1>
+        <p>
+          Escritório fictício voltado para roleplay, com atendimento jurídico personalizado, suporte emergencial e acompanhamento dos principais processos do servidor.
+        </p>
+        <div class="buttons">
+          <a href="#servicos" class="btn btn-gold">Ver serviços</a>
+          <a href="#contato" class="btn btn-outline">Falar com advogado</a>
+          <a href="https://discord.gg/jGrzF5c9A7" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Entrar no Discord</a>
+        </div>
+      </div>
+
+      <div class="hero-side">
+        <div class="hero-image">
+          <img src="https://media.discordapp.net/attachments/1483269881163022397/1487456892635844769/ChatGPT_Image_28_03_2026_04_35_59.png?ex=69c935ae&is=69c7e42e&hm=761c82e7d63a2fef8744379de05475d39e241f367f00d2d32627b5adc7bde779&=&format=webp&quality=lossless&width=960&height=960" alt="Imagem principal da Advocacia RP" />
+        </div>
+        <div class="hero-mini-cards">
+          <div class="card">
+            <h3>Atendimento 24/7</h3>
+            <p>Plantão RP para fiança, emergências e acompanhamento de casos urgentes.</p>
+          </div>
+          <div class="card">
+            <h3>Defesa RP</h3>
+            <p>Atuação estratégica com postura profissional e foco no melhor resultado para o personagem.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="servicos">
+    <div class="container">
+      <div class="section-title">
+        <p>Serviços</p>
+        <h2>O que nós fazemos</h2>
+      </div>
+      <div class="services">
+        <div class="service-box">
+          <div class="icon"></div>
+          <h3>Porte de Arma</h3>
+          <p>Assessoria RP para entrada de pedido, análise documental e acompanhamento do processo.</p>
+        </div>
+        <div class="service-box">
+          <div class="icon"></div>
+          <h3>Limpeza de Ficha</h3>
+          <p>Atuação em revisão de registros e defesa do personagem conforme as regras do roleplay.</p>
+        </div>
+        <div class="service-box">
+          <div class="icon"></div>
+          <h3>Troca de Nick</h3>
+          <p>Suporte administrativo RP para alteração de identidade e regularização cadastral do personagem.</p>
+        </div>
+        <div class="service-box">
+          <div class="icon"></div>
+          <h3>Fiança para Liberar Preso</h3>
+          <p>Atendimento emergencial para análise do caso, negociação e acompanhamento da soltura dentro do RP.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section highlight" id="sobre">
+    <div class="container highlight-grid">
+      <div class="card">
+        <h3>Atendimento estratégico</h3>
+        <p>Cada caso RP recebe análise detalhada, postura firme e foco em solução rápida.</p>
+      </div>
+      <div class="card">
+        <h3>Defesa personalizada</h3>
+        <p>Trabalhamos com recursos, regularizações e negociações de forma completa no roleplay.</p>
+      </div>
+      <div class="card">
+        <h3>Presença de autoridade</h3>
+        <p>Visual sofisticado e linguagem profissional para valorizar seu escritório no servidor.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="recrutamento">
+    <div class="container">
+      <div class="section-title">
+        <p>Recrutamento</p>
+        <h2>Como funciona o recrutamento</h2>
+      </div>
+
+      <div class="highlight-grid">
+        <div class="card">
+          <h3>Processo seletivo exigente</h3>
+          <p>Nosso recrutamento RP é rigoroso e voltado apenas para candidatos realmente preparados. Não basta querer entrar: é preciso demonstrar postura, maturidade, disciplina e compromisso com a função.</p>
+        </div>
+        <div class="card">
+          <h3>Conhecimento de regras</h3>
+          <p>O candidato deve conhecer muito bem as regras do servidor, saber interpretar situações com seriedade e agir sempre dentro do padrão jurídico e ético do roleplay.</p>
+        </div>
+        <div class="card">
+          <h3>Respeito máximo</h3>
+          <p>A advocacia exige comunicação limpa, respeito absoluto, responsabilidade com os clientes e comportamento compatível com a imagem de um verdadeiro advogado dentro da cidade.</p>
+        </div>
+      </div>
+
+      <div class="form-box" style="margin-top: 28px;">
+        <h2 style="margin-bottom: 14px; color: #d4af37;">Requisitos básicos</h2>
+        <p style="margin-bottom: 12px; color: #cfcfcf;">Para participar do recrutamento, buscamos jogadores que tenham:</p>
+        <p>• Boa escrita e comunicação profissional.</p>
+        <p>• Conhecimento sólido das regras sérias do servidor.</p>
+        <p>• Capacidade de manter calma e postura em situações de pressão.</p>
+        <p>• Máximo respeito com polícia, juízes, clientes e demais cidadãos.</p>
+        <p>• Compromisso com a ética e com a imagem da advocacia no roleplay.</p>
+        <p style="margin-top: 16px; color: #d4af37; font-weight: bold;">A entrada não é fácil. Só aprovamos quem realmente demonstra nível, responsabilidade e conduta de advogado.</p>
+
+        <form id="recrutamentoForm" style="margin-top:20px;">
+          <input type="text" id="r_nome" placeholder="Nome" required />
+          <input type="text" id="r_id" placeholder="ID no jogo" required />
+          <input type="text" id="r_telefone" placeholder="Telefone no jogo" required />
+          <input type="text" id="r_discord" placeholder="Discord" required />
+          <textarea id="r_motivo" placeholder="Por que quer entrar?" required></textarea>
+          <textarea id="r_regras" placeholder="Você sabe as regras? Explique" required></textarea>
+          <button type="submit" class="btn btn-gold">Enviar candidatura</button>
+          <p id="statusRecrutamento" style="margin-top:10px; color:#d4af37;"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contato">
+    <div class="container contact-grid">
+      <div class="form-box">
+        <div class="section-title">
+          <p>Contato</p>
+          <h2>Agende seu atendimento RP</h2>
+        </div>
+        <p>Fale com nossa equipe fictícia para abrir seu caso e consultar valores dentro do roleplay.</p>
+
+        <form id="contactForm">
+          <input type="text" id="nome" placeholder="Seu nome" required />
+          <input type="text" id="contato" placeholder="Telefone / Discord" required />
+          <input type="text" id="assunto" placeholder="Assunto do caso" required />
+          <textarea id="mensagem" placeholder="Descreva seu caso RP" required></textarea>
+          <button type="submit" class="btn btn-gold">Solicitar atendimento</button>
+          <p id="statusMensagem" style="margin-top: 12px; color: #d4af37;"></p>
+        </form>
+      </div>
+
+      <div class="info-box">
+        <h2 style="margin-bottom: 20px; color: #d4af37;">Advocacia RP</h2>
+        <p><strong>Horário:</strong> 24 horas no roleplay</p>
+        <p><strong>Local:</strong> Centro Jurídico da Cidade</p>
+        <p><strong>Contato:</strong> 7850-3376</p>
+        <p><strong>Discord:</strong> discord.gg/jGrzF5c9A7</p>
+        <p><strong>Especialidade:</strong> Defesa criminal, recursos e regularizações RP</p>
+
+        <div class="card" style="margin-top: 24px;">
+          <p>Este site é fictício e foi criado para uso em roleplay. Todo o conteúdo deve ser interpretado apenas dentro desse contexto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Advocacia RP — Site fictício para roleplay.</p>
+    </div>
+  </footer>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    const recrutamentoForm = document.getElementById('recrutamentoForm');
+    const statusRecrutamento = document.getElementById('statusRecrutamento');
+    const statusMensagem = document.getElementById('statusMensagem');
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      const webhookUrl = 'COLE_AQUI_SEU_WEBHOOK_DE_CONTATO';
+
+      const payload = {
+        content: '══════ ⚖️ NOVO CONTATO DO SITE ══════\n\n' +
+          '👤 Nome: ' + document.getElementById('nome').value + '\n' +
+          '📞 Contato: ' + document.getElementById('contato').value + '\n' +
+          '📄 Assunto: ' + document.getElementById('assunto').value + '\n' +
+          '📝 Mensagem: ' + document.getElementById('mensagem').value
+      };
+
+      statusMensagem.textContent = 'Enviando solicitação...';
+
+      try {
+        const response = await fetch(webhookUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        if (!response.ok) {
+          throw new Error('Falha ao enviar');
+        }
+
+        statusMensagem.textContent = 'Solicitação enviada com sucesso. Aguarde, em breve iremos falar com você.';
+        form.reset();
+      } catch (error) {
+        statusMensagem.textContent = 'Não foi possível enviar sua solicitação. Tente novamente em instantes.';
+      }
+    });
+
+    if (recrutamentoForm) {
+      recrutamentoForm.addEventListener('submit', async function (e) {
+        e.preventDefault();
+
+        const webhookUrl = 'COLE_AQUI_SEU_WEBHOOK_DE_RECRUTAMENTO';
+
+        const payload = {
+          content: '══════ 👔 NOVA CANDIDATURA ══════\n\n' +
+            '👤 Nome: ' + document.getElementById('r_nome').value + '\n' +
+            '🆔 ID: ' + document.getElementById('r_id').value + '\n' +
+            '📞 Telefone: ' + document.getElementById('r_telefone').value + '\n' +
+            '💬 Discord: ' + document.getElementById('r_discord').value + '\n' +
+            '📄 Motivo: ' + document.getElementById('r_motivo').value + '\n' +
+            '📚 Regras: ' + document.getElementById('r_regras').value
+        };
+
+        statusRecrutamento.textContent = 'Enviando candidatura...';
+
+        try {
+          const response = await fetch(webhookUrl, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+          });
+
+          if (!response.ok) {
+            throw new Error('Falha ao enviar candidatura');
+          }
+
+          statusRecrutamento.textContent = 'Candidatura enviada! Aguarde contato da equipe.';
+          recrutamentoForm.reset();
+        } catch (error) {
+          statusRecrutamento.textContent = 'Erro ao enviar candidatura.';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
