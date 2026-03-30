@@ -3,23 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Advocacia RP</title>
-  <meta name="description" content="Advocacia Premium para Roleplay, com atendimento jurídico fictício, defesa estratégica e recrutamento no servidor." />
-  <meta property="og:title" content="Advocacia RP" />
-  <meta property="og:description" content="Defendendo seus direitos no RP com estratégia e presença." />
+  <title>CPX Advocacia Especializada</title>
+  <meta name="description" content="Advocacia especializada para roleplay, com atendimento jurídico fictício, defesa estratégica e recrutamento no servidor." />
+  <meta property="og:title" content="CPX Advocacia Especializada" />
+  <meta property="og:description" content="Defendendo seus direitos no RP com estratégia, presença e autoridade." />
+  <meta property="og:image" content="https://media.discordapp.net/attachments/1485470657390182561/1487958869778108416/IMG_4680.png?ex=69cb092f&is=69c9b7af&hm=f8632be0cbfcffbef1fdf2b17c214d92f6156ddbe4d412c139f4b5f82fd4047e&=&format=webp&quality=lossless&width=645&height=630" />
 
-  <!-- Favicon adicionado -->
-  <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/1483269881163022397/1487456892635844769/ChatGPT_Image_28_03_2026_04_35_59.png" />
-  <link rel="shortcut icon" href="https://media.discordapp.net/attachments/1483269881163022397/1487456892635844769/ChatGPT_Image_28_03_2026_04_35_59.png" type="image/png" />
-  <link rel="apple-touch-icon" href="https://media.discordapp.net/attachments/1483269881163022397/1487456892635844769/ChatGPT_Image_28_03_2026_04_35_59.png" />
+  <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/1485470657390182561/1487958869778108416/IMG_4680.png?ex=69cb092f&is=69c9b7af&hm=f8632be0cbfcffbef1fdf2b17c214d92f6156ddbe4d412c139f4b5f82fd4047e&=&format=webp&quality=lossless&width=645&height=630" />
+  <link rel="shortcut icon" href="https://media.discordapp.net/attachments/1485470657390182561/1487958869778108416/IMG_4680.png?ex=69cb092f&is=69c9b7af&hm=f8632be0cbfcffbef1fdf2b17c214d92f6156ddbe4d412c139f4b5f82fd4047e&=&format=webp&quality=lossless&width=645&height=630" type="image/png" />
+  <link rel="apple-touch-icon" href="https://media.discordapp.net/attachments/1485470657390182561/1487958869778108416/IMG_4680.png?ex=69cb092f&is=69c9b7af&hm=f8632be0cbfcffbef1fdf2b17c214d92f6156ddbe4d412c139f4b5f82fd4047e&=&format=webp&quality=lossless&width=645&height=630" />
 
-  <meta property="og:image" content="https://media.discordapp.net/attachments/1483269881163022397/1487456892635844769/ChatGPT_Image_28_03_2026_04_35_59.png?ex=69c935ae&is=69c7e42e&hm=761c82e7d63a2fef8744379de05475d39e241f367f00d2d32627b5adc7bde779&=&format=webp&quality=lossless&width=960&height=960" />
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: "Georgia", "Times New Roman", serif;
     }
 
     html {
@@ -27,9 +26,12 @@
     }
 
     body {
-      background: #0b0b0f;
-      color: #ffffff;
+      background:
+        radial-gradient(circle at top, rgba(255,255,255,0.04), transparent 20%),
+        linear-gradient(180deg, #5c0010 0%, #3b000b 35%, #1a0004 100%);
+      color: #f3f3f3;
       line-height: 1.6;
+      overflow-x: hidden;
     }
 
     a {
@@ -44,18 +46,18 @@
 
     .container {
       width: 90%;
-      max-width: 1200px;
+      max-width: 1240px;
       margin: 0 auto;
     }
 
     header {
-      background: linear-gradient(135deg, rgba(17,17,24,0.92), rgba(27,27,36,0.92));
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-      padding: 18px 0;
       position: sticky;
       top: 0;
-      z-index: 20;
-      backdrop-filter: blur(8px);
+      z-index: 1000;
+      background: rgba(40, 0, 8, 0.88);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
     }
 
     nav {
@@ -63,203 +65,271 @@
       justify-content: space-between;
       align-items: center;
       gap: 20px;
+      padding: 16px 0;
     }
 
     .brand {
       display: flex;
       align-items: center;
       gap: 14px;
+      min-width: 0;
     }
 
     .brand img {
-      width: 54px;
-      height: 54px;
+      width: 62px;
+      height: 62px;
       object-fit: cover;
-      border-radius: 16px;
-      border: 1px solid rgba(212,175,55,0.35);
-      box-shadow: 0 8px 24px rgba(0,0,0,0.28);
+      border-radius: 18px;
+      border: 1px solid rgba(230, 230, 230, 0.35);
+      box-shadow:
+        0 0 0 2px rgba(255,255,255,0.04),
+        0 8px 24px rgba(0,0,0,0.35);
+      background: #3a000a;
     }
 
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-      color: #d4af37;
+    .logo-text {
+      display: flex;
+      flex-direction: column;
       line-height: 1.1;
     }
 
-    .logo span {
-      display: block;
-      color: #eaeaea;
-      font-size: 12px;
-      font-weight: normal;
-      letter-spacing: 1.5px;
+    .logo-text strong {
+      font-size: 24px;
+      color: #f0f0f0;
+      letter-spacing: 1px;
       text-transform: uppercase;
-      margin-top: 4px;
+    }
+
+    .logo-text span {
+      font-size: 11px;
+      color: #d7d7d7;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: 5px;
     }
 
     .menu {
       display: flex;
-      gap: 24px;
-      font-size: 15px;
       align-items: center;
+      gap: 22px;
       flex-wrap: wrap;
       justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .menu a {
+      font-size: 15px;
+      color: #f2f2f2;
+      transition: 0.3s ease;
+      position: relative;
+    }
+
+    .menu a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 0%;
+      height: 1px;
+      background: linear-gradient(90deg, #ffffff, #bfbfbf);
+      transition: 0.3s ease;
     }
 
     .menu a:hover {
-      color: #d4af37;
+      color: #ffffff;
+    }
+
+    .menu a:hover::after {
+      width: 100%;
     }
 
     .hero {
-      padding: 90px 0;
-      background: radial-gradient(circle at top right, rgba(212,175,55,0.18), transparent 30%), linear-gradient(180deg, rgba(255,255,255,0.02), transparent 45%), #0b0b0f;
+      padding: 90px 0 70px;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at right top, rgba(255,255,255,0.08), transparent 25%),
+        radial-gradient(circle at left center, rgba(255,255,255,0.04), transparent 20%);
+      pointer-events: none;
     }
 
     .hero-content {
+      position: relative;
+      z-index: 1;
       display: grid;
-      grid-template-columns: 1.15fr 0.95fr;
-      gap: 40px;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 42px;
       align-items: center;
     }
 
     .tag {
       display: inline-block;
-      padding: 8px 14px;
-      border: 1px solid rgba(212,175,55,0.4);
-      background: rgba(212,175,55,0.1);
+      padding: 9px 16px;
       border-radius: 999px;
-      color: #f3d77d;
-      margin-bottom: 20px;
-      font-size: 14px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.16);
+      color: #f1f1f1;
+      font-size: 13px;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
     .hero h1 {
-      font-size: 52px;
-      line-height: 1.1;
-      margin-bottom: 20px;
+      font-size: 56px;
+      line-height: 1.08;
+      margin-bottom: 18px;
+      color: #ffffff;
+      text-shadow: 0 6px 20px rgba(0,0,0,0.25);
     }
 
     .hero h1 span {
-      color: #d4af37;
+      color: #d8d8d8;
     }
 
     .hero p {
-      color: #cfcfcf;
       font-size: 18px;
-      max-width: 620px;
+      color: #ececec;
+      max-width: 650px;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
     .buttons {
-      margin-top: 30px;
       display: flex;
       gap: 16px;
       flex-wrap: wrap;
+      margin-top: 30px;
     }
 
     .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       padding: 14px 24px;
       border-radius: 14px;
       font-weight: bold;
-      transition: 0.3s;
-      display: inline-block;
-      cursor: pointer;
       border: none;
+      cursor: pointer;
+      transition: 0.3s ease;
+      font-family: Arial, Helvetica, sans-serif;
+      letter-spacing: 0.3px;
     }
 
-    .btn-gold {
-      background: #d4af37;
-      color: #111;
+    .btn-silver {
+      background: linear-gradient(135deg, #f4f4f4 0%, #c8c8c8 45%, #8a8a8a 100%);
+      color: #2b0007;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.22);
     }
 
-    .btn-gold:hover {
-      opacity: 0.9;
+    .btn-silver:hover {
       transform: translateY(-2px);
+      filter: brightness(1.04);
     }
 
     .btn-outline {
-      border: 1px solid rgba(255,255,255,0.18);
-      color: #fff;
-      background: transparent;
+      background: rgba(255,255,255,0.04);
+      color: #ffffff;
+      border: 1px solid rgba(255,255,255,0.2);
     }
 
     .btn-outline:hover {
-      background: rgba(255,255,255,0.06);
+      background: rgba(255,255,255,0.09);
+      transform: translateY(-2px);
     }
 
-    .hero-side {
+    .hero-right {
       display: grid;
       gap: 18px;
     }
 
     .hero-image {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 26px;
-      overflow: hidden;
-      box-shadow: 0 12px 34px rgba(0,0,0,0.28);
       position: relative;
+      border-radius: 28px;
+      overflow: hidden;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: 0 18px 45px rgba(0,0,0,0.3);
+      min-height: 520px;
     }
 
     .hero-image img {
       width: 100%;
       height: 100%;
-      min-height: 420px;
+      min-height: 520px;
       object-fit: cover;
     }
 
     .hero-image::after {
-      content: "Advocacia Premium";
+      content: "CPX Advocacia Especializada";
       position: absolute;
-      left: 18px;
-      bottom: 18px;
-      background: rgba(11,11,15,0.75);
-      color: #d4af37;
-      border: 1px solid rgba(212,175,55,0.35);
-      padding: 10px 14px;
+      left: 20px;
+      bottom: 20px;
+      background: rgba(30, 0, 6, 0.78);
+      border: 1px solid rgba(255,255,255,0.18);
+      color: #ffffff;
+      padding: 12px 16px;
       border-radius: 14px;
       font-weight: bold;
-      letter-spacing: 0.5px;
+      font-size: 14px;
+      letter-spacing: 1px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
       backdrop-filter: blur(8px);
     }
 
-    .hero-mini-cards {
+    .hero-cards {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 18px;
     }
 
     .card {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 22px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 24px;
       padding: 24px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.22);
+      backdrop-filter: blur(6px);
     }
 
     .card h3 {
-      color: #d4af37;
-      margin-bottom: 8px;
+      color: #ffffff;
+      margin-bottom: 10px;
       font-size: 24px;
     }
 
+    .card p {
+      color: #f0f0f0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+    }
+
     .section {
-      padding: 80px 0;
+      padding: 82px 0;
     }
 
     .section-title {
-      margin-bottom: 40px;
+      margin-bottom: 36px;
     }
 
     .section-title p {
-      color: #d4af37;
+      color: #dbdbdb;
       text-transform: uppercase;
       letter-spacing: 3px;
-      font-size: 13px;
+      font-size: 12px;
       margin-bottom: 10px;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
     .section-title h2 {
-      font-size: 38px;
+      font-size: 40px;
+      color: #ffffff;
     }
 
     .services {
@@ -269,41 +339,64 @@
     }
 
     .service-box {
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 22px;
+      position: relative;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 24px;
       padding: 28px;
-      transition: 0.3s;
+      overflow: hidden;
+      transition: 0.3s ease;
     }
 
     .service-box:hover {
       transform: translateY(-6px);
-      border-color: rgba(212,175,55,0.5);
+      border-color: rgba(255,255,255,0.24);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.25);
     }
 
-    .service-box .icon {
-      width: 48px;
-      height: 48px;
-      border-radius: 14px;
-      background: linear-gradient(135deg, rgba(212,175,55,0.28), rgba(212,175,55,0.08));
-      margin-bottom: 16px;
-      border: 1px solid rgba(212,175,55,0.2);
+    .service-box::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, #ffffff, #adadad, #ffffff);
+    }
+
+    .service-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 18px;
+      border: 1px solid rgba(255,255,255,0.18);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      background: rgba(255,255,255,0.06);
+    }
+
+    .service-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     .service-box h3 {
-      margin-bottom: 12px;
       font-size: 22px;
+      margin-bottom: 12px;
+      color: #ffffff;
     }
 
     .service-box p {
-      color: #c9c9c9;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #efefef;
       font-size: 15px;
     }
 
-    .highlight {
-      background: rgba(255,255,255,0.02);
-      border-top: 1px solid rgba(255,255,255,0.08);
-      border-bottom: 1px solid rgba(255,255,255,0.08);
+    .luxury-band {
+      background: rgba(255,255,255,0.04);
+      border-top: 1px solid rgba(255,255,255,0.1);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
     }
 
     .highlight-grid {
@@ -314,36 +407,47 @@
 
     .contact-grid {
       display: grid;
-      grid-template-columns: 1.3fr 0.9fr;
+      grid-template-columns: 1.2fr 0.8fr;
       gap: 28px;
     }
 
-    .form-box, .info-box {
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 24px;
+    .form-box,
+    .info-box {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 26px;
       padding: 30px;
+      box-shadow: 0 14px 35px rgba(0,0,0,0.22);
     }
 
     form {
       display: grid;
       gap: 14px;
-      margin-top: 24px;
+      margin-top: 22px;
     }
 
-    input, textarea {
+    input,
+    textarea {
       width: 100%;
-      padding: 14px 16px;
+      padding: 15px 16px;
       border-radius: 14px;
-      border: 1px solid rgba(255,255,255,0.1);
-      background: rgba(0,0,0,0.25);
-      color: #fff;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(0,0,0,0.18);
+      color: #ffffff;
       outline: none;
+      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
-    input:focus, textarea:focus {
-      border-color: rgba(212,175,55,0.5);
-      box-shadow: 0 0 0 3px rgba(212,175,55,0.08);
+    input::placeholder,
+    textarea::placeholder {
+      color: #d3d3d3;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: rgba(255,255,255,0.35);
+      box-shadow: 0 0 0 3px rgba(255,255,255,0.07);
     }
 
     textarea {
@@ -351,16 +455,50 @@
       resize: vertical;
     }
 
-    footer {
-      border-top: 1px solid rgba(255,255,255,0.08);
-      text-align: center;
-      padding: 26px 0;
-      color: #a9a9a9;
-      font-size: 14px;
+    .info-logo {
+      width: 100%;
+      max-width: 280px;
+      margin: 0 auto 20px;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: 0 14px 30px rgba(0,0,0,0.25);
     }
 
-    @media (max-width: 1024px) {
-      .hero-content, .contact-grid, .highlight-grid {
+    .info-logo img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .info-box p {
+      margin-bottom: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #f0f0f0;
+    }
+
+    .note-card {
+      margin-top: 22px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 18px;
+    }
+
+    footer {
+      padding: 28px 0;
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      color: #e3e3e3;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+      background: rgba(15,0,3,0.35);
+    }
+
+    @media (max-width: 1100px) {
+      .hero-content,
+      .contact-grid,
+      .highlight-grid {
         grid-template-columns: 1fr 1fr;
       }
 
@@ -369,7 +507,7 @@
       }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 780px) {
       nav {
         flex-direction: column;
       }
@@ -378,28 +516,50 @@
         gap: 14px;
       }
 
+      .hero {
+        padding-top: 70px;
+      }
+
       .hero h1 {
         font-size: 38px;
       }
 
-      .hero-content, .contact-grid, .highlight-grid, .services, .hero-mini-cards {
+      .hero-content,
+      .contact-grid,
+      .highlight-grid,
+      .services,
+      .hero-cards {
         grid-template-columns: 1fr;
       }
 
+      .hero-image,
       .hero-image img {
-        min-height: 320px;
+        min-height: 360px;
+      }
+
+      .logo-text strong {
+        font-size: 20px;
+      }
+
+      .section-title h2 {
+        font-size: 30px;
       }
     }
   </style>
 </head>
 <body>
+
   <header>
     <div class="container">
       <nav>
         <a href="#inicio" class="brand">
-          <img src="https://media.discordapp.net/attachments/1483269881163022397/1487456892635844769/ChatGPT_Image_28_03_2026_04_35_59.png?ex=69c935ae&is=69c7e42e&hm=761c82e7d63a2fef8744379de05475d39e241f367f00d2d32627b5adc7bde779&=&format=webp&quality=lossless&width=960&height=960" alt="Logo Advocacia RP" />
-          <div class="logo">Advocacia RP<span>Presença. Defesa. Estratégia.</span></div>
+          <img src="https://media.discordapp.net/attachments/1485470657390182561/1487958869778108416/IMG_4680.png?ex=69cb092f&is=69c9b7af&hm=f8632be0cbfcffbef1fdf2b17c214d92f6156ddbe4d412c139f4b5f82fd4047e&=&format=webp&quality=lossless&width=645&height=630" alt="Logo CPX Advocacia Especializada" />
+          <div class="logo-text">
+            <strong>CPX Advocacia</strong>
+            <span>Advocacia Especializada</span>
+          </div>
         </a>
+
         <div class="menu">
           <a href="#inicio">Início</a>
           <a href="#servicos">Serviços</a>
@@ -414,30 +574,33 @@
   <section class="hero" id="inicio">
     <div class="container hero-content">
       <div>
-        <div class="tag">Advocacia Premium • Roleplay</div>
-        <h1>Defendendo seus direitos no <span>RP</span> com estratégia e presença.</h1>
+        <div class="tag">Serviço Legal • Roleplay Premium</div>
+        <h1>Defendendo seus direitos no <span>RP</span> com autoridade, presença e estratégia.</h1>
         <p>
-          Escritório fictício voltado para roleplay, com atendimento jurídico personalizado, suporte emergencial e acompanhamento dos principais processos do servidor.
+          Escritório jurídico fictício com identidade forte, atendimento profissional e atuação de alto nível dentro do roleplay. A CPX Advocacia Especializada entrega postura, respeito e defesa séria para cada caso.
         </p>
+
         <div class="buttons">
-          <a href="#servicos" class="btn btn-gold">Ver serviços</a>
+          <a href="#servicos" class="btn btn-silver">Ver serviços</a>
           <a href="#contato" class="btn btn-outline">Falar com advogado</a>
           <a href="https://discord.gg/jGrzF5c9A7" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Entrar no Discord</a>
         </div>
       </div>
 
-      <div class="hero-side">
+      <div class="hero-right">
         <div class="hero-image">
-          <img src="https://media.discordapp.net/attachments/1483269881163022397/1487456892635844769/ChatGPT_Image_28_03_2026_04_35_59.png?ex=69c935ae&is=69c7e42e&hm=761c82e7d63a2fef8744379de05475d39e241f367f00d2d32627b5adc7bde779&=&format=webp&quality=lossless&width=960&height=960" alt="Imagem principal da Advocacia RP" />
+          <img src="https://media.discordapp.net/attachments/1485470657390182561/1487958869778108416/IMG_4680.png?ex=69cb092f&is=69c9b7af&hm=f8632be0cbfcffbef1fdf2b17c214d92f6156ddbe4d412c139f4b5f82fd4047e&=&format=webp&quality=lossless&width=645&height=630" alt="Imagem principal da CPX Advocacia Especializada" />
         </div>
-        <div class="hero-mini-cards">
+
+        <div class="hero-cards">
           <div class="card">
             <h3>Atendimento 24/7</h3>
-            <p>Plantão RP para fiança, emergências e acompanhamento de casos urgentes.</p>
+            <p>Plantão RP para emergências, fiança, consultoria e acompanhamento jurídico com postura profissional.</p>
           </div>
+
           <div class="card">
-            <h3>Defesa RP</h3>
-            <p>Atuação estratégica com postura profissional e foco no melhor resultado para o personagem.</p>
+            <h3>Defesa Estratégica</h3>
+            <p>Atuação firme, linguagem séria e defesa planejada para buscar o melhor resultado para seu personagem.</p>
           </div>
         </div>
       </div>
@@ -448,46 +611,67 @@
     <div class="container">
       <div class="section-title">
         <p>Serviços</p>
-        <h2>O que nós fazemos</h2>
+        <h2>O que a CPX faz por você</h2>
       </div>
+
       <div class="services">
         <div class="service-box">
-          <div class="icon"></div>
+          <div class="service-icon">
+            <img src="https://media.discordapp.net/attachments/1485470657390182561/1487958869778108416/IMG_4680.png?ex=69cb092f&is=69c9b7af&hm=f8632be0cbfcffbef1fdf2b17c214d92f6156ddbe4d412c139f4b5f82fd4047e&=&format=webp&quality=lossless&width=645&height=630" alt="Ícone CPX" />
+          </div>
           <h3>Porte de Arma</h3>
-          <p>Assessoria RP para entrada de pedido, análise documental e acompanhamento do processo.</p>
+          <p>Assessoria RP completa para abertura do pedido, revisão documental e acompanhamento do processo administrativo.</p>
         </div>
+
         <div class="service-box">
-          <div class="icon"></div>
+          <div class="service-icon">
+            <img src="https://media.discordapp.net/attachments/1485470657390182561/1487958869778108416/IMG_4680.png?ex=69cb092f&is=69c9b7af&hm=f8632be0cbfcffbef1fdf2b17c214d92f6156ddbe4d412c139f4b5f82fd4047e&=&format=webp&quality=lossless&width=645&height=630" alt="Ícone CPX" />
+          </div>
           <h3>Limpeza de Ficha</h3>
-          <p>Atuação em revisão de registros e defesa do personagem conforme as regras do roleplay.</p>
+          <p>Defesa jurídica RP voltada para revisão de antecedentes, recursos estratégicos e regularização do histórico do personagem.</p>
         </div>
+
         <div class="service-box">
-          <div class="icon"></div>
+          <div class="service-icon">
+            <img src="https://media.discordapp.net/attachments/1485470657390182561/1487958869778108416/IMG_4680.png?ex=69cb092f&is=69c9b7af&hm=f8632be0cbfcffbef1fdf2b17c214d92f6156ddbe4d412c139f4b5f82fd4047e&=&format=webp&quality=lossless&width=645&height=630" alt="Ícone CPX" />
+          </div>
           <h3>Troca de Nick</h3>
-          <p>Suporte administrativo RP para alteração de identidade e regularização cadastral do personagem.</p>
+          <p>Suporte jurídico e administrativo RP para alteração de identidade, regularização e atualização cadastral do personagem.</p>
         </div>
+
         <div class="service-box">
-          <div class="icon"></div>
-          <h3>Fiança para Liberar Preso</h3>
-          <p>Atendimento emergencial para análise do caso, negociação e acompanhamento da soltura dentro do RP.</p>
+          <div class="service-icon">
+            <img src="https://media.discordapp.net/attachments/1485470657390182561/1487958869778108416/IMG_4680.png?ex=69cb092f&is=69c9b7af&hm=f8632be0cbfcffbef1fdf2b17c214d92f6156ddbe4d412c139f4b5f82fd4047e&=&format=webp&quality=lossless&width=645&height=630" alt="Ícone CPX" />
+          </div>
+          <h3>Fiança e Soltura</h3>
+          <p>Atendimento emergencial para análise do caso, negociação, orientação e acompanhamento do processo de liberação do preso.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section highlight" id="sobre">
-    <div class="container highlight-grid">
-      <div class="card">
-        <h3>Atendimento estratégico</h3>
-        <p>Cada caso RP recebe análise detalhada, postura firme e foco em solução rápida.</p>
+  <section class="section luxury-band" id="sobre">
+    <div class="container">
+      <div class="section-title">
+        <p>Sobre</p>
+        <h2>Presença jurídica de alto nível no servidor</h2>
       </div>
-      <div class="card">
-        <h3>Defesa personalizada</h3>
-        <p>Trabalhamos com recursos, regularizações e negociações de forma completa no roleplay.</p>
-      </div>
-      <div class="card">
-        <h3>Presença de autoridade</h3>
-        <p>Visual sofisticado e linguagem profissional para valorizar seu escritório no servidor.</p>
+
+      <div class="highlight-grid">
+        <div class="card">
+          <h3>Imagem de autoridade</h3>
+          <p>A identidade visual da CPX transmite respeito, firmeza e impacto, reforçando a presença do escritório em qualquer situação do RP.</p>
+        </div>
+
+        <div class="card">
+          <h3>Atendimento personalizado</h3>
+          <p>Cada caso recebe atenção exclusiva, análise detalhada e condução estratégica conforme a necessidade do cliente dentro da cidade.</p>
+        </div>
+
+        <div class="card">
+          <h3>Postura profissional</h3>
+          <p>Comunicação refinada, ética sólida e atuação séria para valorizar o roleplay e elevar o nível da advocacia no servidor.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -496,33 +680,41 @@
     <div class="container">
       <div class="section-title">
         <p>Recrutamento</p>
-        <h2>Como funciona o recrutamento</h2>
+        <h2>Como funciona a seleção da equipe</h2>
       </div>
 
       <div class="highlight-grid">
         <div class="card">
-          <h3>Processo seletivo exigente</h3>
-          <p>Nosso recrutamento RP é rigoroso e voltado apenas para candidatos realmente preparados. Não basta querer entrar: é preciso demonstrar postura, maturidade, disciplina e compromisso com a função.</p>
+          <h3>Processo seletivo rigoroso</h3>
+          <p>Nosso recrutamento não é simples. Buscamos apenas candidatos com postura, responsabilidade, maturidade e real compromisso com a função.</p>
         </div>
+
         <div class="card">
-          <h3>Conhecimento de regras</h3>
-          <p>O candidato deve conhecer muito bem as regras do servidor, saber interpretar situações com seriedade e agir sempre dentro do padrão jurídico e ético do roleplay.</p>
+          <h3>Conhecimento das regras</h3>
+          <p>O candidato deve dominar as regras do servidor, interpretar situações com seriedade e agir com coerência jurídica dentro do roleplay.</p>
         </div>
+
         <div class="card">
-          <h3>Respeito máximo</h3>
-          <p>A advocacia exige comunicação limpa, respeito absoluto, responsabilidade com os clientes e comportamento compatível com a imagem de um verdadeiro advogado dentro da cidade.</p>
+          <h3>Conduta exemplar</h3>
+          <p>A advocacia exige respeito máximo, comunicação limpa, disciplina e comportamento compatível com a imagem de um advogado sério na cidade.</p>
         </div>
       </div>
 
       <div class="form-box" style="margin-top: 28px;">
-        <h2 style="margin-bottom: 14px; color: #d4af37;">Requisitos básicos</h2>
-        <p style="margin-bottom: 12px; color: #cfcfcf;">Para participar do recrutamento, buscamos jogadores que tenham:</p>
-        <p>• Boa escrita e comunicação profissional.</p>
-        <p>• Conhecimento sólido das regras sérias do servidor.</p>
-        <p>• Capacidade de manter calma e postura em situações de pressão.</p>
-        <p>• Máximo respeito com polícia, juízes, clientes e demais cidadãos.</p>
-        <p>• Compromisso com a ética e com a imagem da advocacia no roleplay.</p>
-        <p style="margin-top: 16px; color: #d4af37; font-weight: bold;">A entrada não é fácil. Só aprovamos quem realmente demonstra nível, responsabilidade e conduta de advogado.</p>
+        <h2 style="margin-bottom: 14px; color: #ffffff;">Requisitos básicos</h2>
+        <p style="margin-bottom: 12px; color: #f0f0f0; font-family: Arial, Helvetica, sans-serif;">
+          Para participar do recrutamento, buscamos jogadores que tenham:
+        </p>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; margin-bottom: 8px;">• Boa escrita e comunicação profissional.</p>
+        <p style="font-family: Arial, Helvetica, sans-serif; margin-bottom: 8px;">• Conhecimento sólido das regras sérias do servidor.</p>
+        <p style="font-family: Arial, Helvetica, sans-serif; margin-bottom: 8px;">• Capacidade de manter calma e postura em situações de pressão.</p>
+        <p style="font-family: Arial, Helvetica, sans-serif; margin-bottom: 8px;">• Respeito com polícia, juízes, clientes e demais cidadãos.</p>
+        <p style="font-family: Arial, Helvetica, sans-serif; margin-bottom: 8px;">• Compromisso com a ética e com a imagem da CPX Advocacia.</p>
+
+        <p style="margin-top: 16px; color: #ffffff; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">
+          A entrada é seletiva. Só aprovamos quem realmente demonstra nível, postura e responsabilidade.
+        </p>
 
         <form id="recrutamentoForm" style="margin-top:20px;">
           <input type="text" id="r_nome" placeholder="Nome" required />
@@ -531,8 +723,8 @@
           <input type="text" id="r_discord" placeholder="Discord" required />
           <textarea id="r_motivo" placeholder="Por que quer entrar?" required></textarea>
           <textarea id="r_regras" placeholder="Você sabe as regras? Explique" required></textarea>
-          <button type="submit" class="btn btn-gold">Enviar candidatura</button>
-          <p id="statusRecrutamento" style="margin-top:10px; color:#d4af37;"></p>
+          <button type="submit" class="btn btn-silver">Enviar candidatura</button>
+          <p id="statusRecrutamento" style="margin-top:10px; color:#ffffff; font-family: Arial, Helvetica, sans-serif;"></p>
         </form>
       </div>
     </div>
@@ -545,28 +737,37 @@
           <p>Contato</p>
           <h2>Agende seu atendimento RP</h2>
         </div>
-        <p>Fale com nossa equipe fictícia para abrir seu caso e consultar valores dentro do roleplay.</p>
+
+        <p style="font-family: Arial, Helvetica, sans-serif;">
+          Fale com nossa equipe fictícia para abrir seu caso, solicitar apoio jurídico e consultar detalhes dentro do roleplay.
+        </p>
 
         <form id="contactForm">
           <input type="text" id="nome" placeholder="Seu nome" required />
           <input type="text" id="contato" placeholder="Telefone / Discord" required />
           <input type="text" id="assunto" placeholder="Assunto do caso" required />
           <textarea id="mensagem" placeholder="Descreva seu caso RP" required></textarea>
-          <button type="submit" class="btn btn-gold">Solicitar atendimento</button>
-          <p id="statusMensagem" style="margin-top: 12px; color: #d4af37;"></p>
+          <button type="submit" class="btn btn-silver">Solicitar atendimento</button>
+          <p id="statusMensagem" style="margin-top: 12px; color: #ffffff; font-family: Arial, Helvetica, sans-serif;"></p>
         </form>
       </div>
 
       <div class="info-box">
-        <h2 style="margin-bottom: 20px; color: #d4af37;">Advocacia RP</h2>
+        <div class="info-logo">
+          <img src="https://media.discordapp.net/attachments/1485470657390182561/1487958869778108416/IMG_4680.png?ex=69cb092f&is=69c9b7af&hm=f8632be0cbfcffbef1fdf2b17c214d92f6156ddbe4d412c139f4b5f82fd4047e&=&format=webp&quality=lossless&width=645&height=630" alt="Logo CPX Advocacia Especializada" />
+        </div>
+
+        <h2 style="margin-bottom: 20px; color: #ffffff;">CPX Advocacia Especializada</h2>
         <p><strong>Horário:</strong> 24 horas no roleplay</p>
         <p><strong>Local:</strong> Centro Jurídico da Cidade</p>
         <p><strong>Contato:</strong> 7850-3376</p>
         <p><strong>Discord:</strong> discord.gg/jGrzF5c9A7</p>
-        <p><strong>Especialidade:</strong> Defesa criminal, recursos e regularizações RP</p>
+        <p><strong>Especialidade:</strong> Defesa criminal, recursos, regularizações e atendimento estratégico RP</p>
 
-        <div class="card" style="margin-top: 24px;">
-          <p>Este site é fictício e foi criado para uso em roleplay. Todo o conteúdo deve ser interpretado apenas dentro desse contexto.</p>
+        <div class="note-card">
+          <p style="margin: 0; font-family: Arial, Helvetica, sans-serif;">
+            Este site é fictício e foi criado para uso em roleplay. Todo o conteúdo deve ser interpretado apenas dentro desse contexto.
+          </p>
         </div>
       </div>
     </div>
@@ -574,42 +775,99 @@
 
   <footer>
     <div class="container">
-      <p>© 2026 Advocacia RP — Site fictício para roleplay.</p>
+      <p>© 2026 CPX Advocacia Especializada — Serviço legal fictício para roleplay.</p>
     </div>
   </footer>
 
   <script>
+    const LOGO_URL = 'https://media.discordapp.net/attachments/1485470657390182561/1487958869778108416/IMG_4680.png?ex=69cb092f&is=69c9b7af&hm=f8632be0cbfcffbef1fdf2b17c214d92f6156ddbe4d412c139f4b5f82fd4047e&=&format=webp&quality=lossless&width=645&height=630';
+
+    const CONTACT_WEBHOOK_URL = 'https://discord.com/api/webhooks/1487309727099523133/q1WcQko3phNbco9h9cBpmqdHtx6TlhQND9sQr_dWqdG2lXDgEj7lkdSwz2ZL-gaqBvVo';
+    const RECRUIT_WEBHOOK_URL = 'https://discord.com/api/webhooks/1487309737480556595/VC999EAaLw2JZglnH46AA6Su8jmmS5drO8BzKbYhje9hKuJlEL746CUP3mDLZRSFjQVC';
+
     const form = document.getElementById('contactForm');
     const recrutamentoForm = document.getElementById('recrutamentoForm');
     const statusRecrutamento = document.getElementById('statusRecrutamento');
     const statusMensagem = document.getElementById('statusMensagem');
 
+    function getBrazilDateTime() {
+      return new Date().toLocaleString('pt-BR', {
+        dateStyle: 'short',
+        timeStyle: 'medium'
+      });
+    }
+
+    function sanitizeText(text) {
+      if (!text) return 'Não informado';
+      return text.trim();
+    }
+
+    async function sendDiscordWebhook(webhookUrl, payload) {
+      const response = await fetch(webhookUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+      });
+
+      if (!response.ok) {
+        throw new Error('Falha ao enviar webhook');
+      }
+    }
+
     form.addEventListener('submit', async function (e) {
       e.preventDefault();
 
-      const webhookUrl = 'COLE_AQUI_SEU_WEBHOOK_DE_CONTATO';
+      const nome = sanitizeText(document.getElementById('nome').value);
+      const contato = sanitizeText(document.getElementById('contato').value);
+      const assunto = sanitizeText(document.getElementById('assunto').value);
+      const mensagem = sanitizeText(document.getElementById('mensagem').value);
 
       const payload = {
-        content: '══════ ⚖️ NOVO CONTATO DO SITE ══════\n\n' +
-          '👤 Nome: ' + document.getElementById('nome').value + '\n' +
-          '📞 Contato: ' + document.getElementById('contato').value + '\n' +
-          '📄 Assunto: ' + document.getElementById('assunto').value + '\n' +
-          '📝 Mensagem: ' + document.getElementById('mensagem').value
+        username: 'CPX • Contato do Site',
+        avatar_url: LOGO_URL,
+        embeds: [
+          {
+            title: '⚖️ Novo contato recebido',
+            color: 7346456,
+            thumbnail: {
+              url: LOGO_URL
+            },
+            fields: [
+              {
+                name: '👤 Nome',
+                value: nome,
+                inline: true
+              },
+              {
+                name: '📞 Contato',
+                value: contato,
+                inline: true
+              },
+              {
+                name: '📄 Assunto',
+                value: assunto,
+                inline: false
+              },
+              {
+                name: '📝 Descrição do caso',
+                value: mensagem,
+                inline: false
+              }
+            ],
+            footer: {
+              text: 'CPX Advocacia Especializada • Formulário de Contato'
+            },
+            timestamp: new Date().toISOString()
+          }
+        ]
       };
 
       statusMensagem.textContent = 'Enviando solicitação...';
 
       try {
-        const response = await fetch(webhookUrl, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload)
-        });
-
-        if (!response.ok) {
-          throw new Error('Falha ao enviar');
-        }
-
+        await sendDiscordWebhook(CONTACT_WEBHOOK_URL, payload);
         statusMensagem.textContent = 'Solicitação enviada com sucesso. Aguarde, em breve iremos falar com você.';
         form.reset();
       } catch (error) {
@@ -621,31 +879,67 @@
       recrutamentoForm.addEventListener('submit', async function (e) {
         e.preventDefault();
 
-        const webhookUrl = 'COLE_AQUI_SEU_WEBHOOK_DE_RECRUTAMENTO';
+        const nome = sanitizeText(document.getElementById('r_nome').value);
+        const idJogo = sanitizeText(document.getElementById('r_id').value);
+        const telefone = sanitizeText(document.getElementById('r_telefone').value);
+        const discord = sanitizeText(document.getElementById('r_discord').value);
+        const motivo = sanitizeText(document.getElementById('r_motivo').value);
+        const regras = sanitizeText(document.getElementById('r_regras').value);
 
         const payload = {
-          content: '══════ 👔 NOVA CANDIDATURA ══════\n\n' +
-            '👤 Nome: ' + document.getElementById('r_nome').value + '\n' +
-            '🆔 ID: ' + document.getElementById('r_id').value + '\n' +
-            '📞 Telefone: ' + document.getElementById('r_telefone').value + '\n' +
-            '💬 Discord: ' + document.getElementById('r_discord').value + '\n' +
-            '📄 Motivo: ' + document.getElementById('r_motivo').value + '\n' +
-            '📚 Regras: ' + document.getElementById('r_regras').value
+          username: 'CPX • Recrutamento',
+          avatar_url: LOGO_URL,
+          embeds: [
+            {
+              title: '👔 Nova candidatura recebida',
+              color: 1048986,
+              thumbnail: {
+                url: LOGO_URL
+              },
+              fields: [
+                {
+                  name: '👤 Nome',
+                  value: nome,
+                  inline: true
+                },
+                {
+                  name: '🆔 ID no jogo',
+                  value: idJogo,
+                  inline: true
+                },
+                {
+                  name: '📞 Telefone',
+                  value: telefone,
+                  inline: true
+                },
+                {
+                  name: '💬 Discord',
+                  value: discord,
+                  inline: true
+                },
+                {
+                  name: '📄 Por que quer entrar?',
+                  value: motivo,
+                  inline: false
+                },
+                {
+                  name: '📚 Conhecimento das regras',
+                  value: regras,
+                  inline: false
+                }
+              ],
+              footer: {
+                text: 'CPX Advocacia Especializada • Formulário de Recrutamento'
+              },
+              timestamp: new Date().toISOString()
+            }
+          ]
         };
 
         statusRecrutamento.textContent = 'Enviando candidatura...';
 
         try {
-          const response = await fetch(webhookUrl, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(payload)
-          });
-
-          if (!response.ok) {
-            throw new Error('Falha ao enviar candidatura');
-          }
-
+          await sendDiscordWebhook(RECRUIT_WEBHOOK_URL, payload);
           statusRecrutamento.textContent = 'Candidatura enviada! Aguarde contato da equipe.';
           recrutamentoForm.reset();
         } catch (error) {
@@ -654,5 +948,6 @@
       });
     }
   </script>
+
 </body>
 </html>
